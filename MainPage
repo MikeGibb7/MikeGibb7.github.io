@@ -143,16 +143,24 @@
             Java - University, Highschool, and Self Taught<br />
             C - University<br />
             C# - Game Development in Unity<br />
+            Kotlin - Self Taught for mobile application development<br />
             Python - Self Taught<br />
             HTML - Website Design, Self Taught<br />
-
+            CSS - Used for web Design<br />
+            <br />
+        </p>
+        <h2>Operating System Experience</h2>
+        <p>
+            Linux - School work, to develop and run C, and Java programs<br />
+            Unix - School work, classes that revolved around using Unix<br />
+            Windows - Personal use, also used for running python programs<br />
         </p>
     </div>
 </body>
-<body>
+<!--<body>
     <div class="suitPicture">
         <img src="C:\Users\mikeg\Downloads\IMG_20220514_110505.jpg" style="width: 250px;height: 350px;"/>
     </div>
-</body>
+</body>-->
 
 </html>
