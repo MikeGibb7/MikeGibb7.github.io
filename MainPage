@@ -97,13 +97,13 @@
         <h1>Main Menu</h1>
         <ul class="nav">
             <li>
-                <a href="file:///C:/Users/mikeg/OneDrive/Documents/Portfolio%20Website%20Real/PortfolioMain.html">
+                <a href="MainPage">
                     <i class="fas fa-server"></i>
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a href="file:///C:/Users/mikeg/OneDrive/Documents/Portfolio%20Website%20Real/PortfolioMain.html">
+                <a href="MainPage">
                     <i class="fas fa-server"></i>
                     <span>Projects</span>
                 </a>
