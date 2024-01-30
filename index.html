@@ -23,6 +23,7 @@
         margin: 0px;
         padding: 0px;
         text-decoration: none;
+        box-sizing:border-box;
     }
 
     body {
@@ -74,6 +75,11 @@
         margin-left: 350px;
         font-family: 'Courier New';
     }
+    .content h3{
+        margin-left:355px;
+        font-family:Arial;
+        font-weight:Bold;
+    }
     .content p {
         margin-top: 20px;
         margin-left: 350px;
@@ -84,6 +90,20 @@
         border: 3px dashed purple;
         top: 100px;
         right: 60px;
+    }
+    .moveRight{
+        margin-left: 340px;
+    }
+    .table1 {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
     }
 </style>
 
@@ -130,31 +150,73 @@
             With dedication, hard work, and a passion for innovation, <br />
             I'm confident that I can achieve my goals and contribute to the advancement of technology.<br /><br />
         </p>
+    </div>
+    <div class="moveRight">
+    <div class="clearfix">
+        <div class="table1">
         <h2>Interests</h2>
         <p>
             - AI models and learning<br />
             - Game Development and Design<br />
+            - Mobile app development <br />
             - Front-end and Back-end Website Design<br />
-            <br />
 
         </p>
+        </div>
+        <div class="table1">
         <h2>Languages I've Worked With</h2>
         <p>
-            Java - University, Highschool, and Self Taught<br />
-            C - University<br />
-            C# - Game Development in Unity<br />
-            Kotlin - Self Taught for mobile application development<br />
+            <strong>Java</strong> - University, Highschool, and Self Taught<br />
+            <strong>C</strong> - University<br />
+            <strong>C#</strong> - Game Development in Unity<br />
+            <strong>Kotlin</strong> - Self Taught for mobile application development<br />
             Python - Self Taught<br />
             HTML - Website Design, Self Taught<br />
             CSS - Used for web Design<br />
-            <br />
         </p>
+        </div>
+        <div class="table1">
         <h2>Operating System Experience</h2>
         <p>
-            Linux - School work, to develop and run C, and Java programs<br />
-            Unix - School work, classes that revolved around using Unix<br />
-            Windows - Personal use, also used for running python programs<br />
+            Linux - School work, to develop and run C, and Java programs
+            Unix - School work, classes that revolved around using Unix
+            Windows - Personal use, also used for running python programs
         </p>
+        </div>
+    </div>
+    </div>
+
+    <div class="content">
+        <h1>Work Experiences</h1>
+        <h2>Teaching Assistant</h2>
+        <h3>University of Windsor - Jan 2024</h3>
+        <p>
+            Worked as a teaching assistant for the comp1400 course, this included having<br />
+            regular office hours, where I assisted students in learning concepts and completing<br />
+            coursework. Attended lab hours, where I would assist students with content<br />
+            related questions and graded student submissions while ensuring understanding<br />
+            of the concepts and programming structure. Proctered Exams and graded exams <br />
+            while staying consistent with marking scheme.<br />
+            <br />
+        </p>
+        <h2>Junior Analyst</h2>
+        <h3>John Simpson Odette Student Investment Fund - Jan 2023</h3>
+        <p>
+            Collaberated with a team of students in the managment of <strong>$240,000</strong> in<br />
+            capital.
+        </p>
+        <h1>Projects</h1>
+        <h2>Kotlin Android App Development</h2>
+        <p>
+            Worked through Android Developers Learn Kotlin course to teach myself<br />
+            the language and structure for developing mobile apps and features.<br />
+            Made a simple dice roller application which allows the user to get <br />
+            a randomized picture of a dice side. Completed this application and <br />
+            published and transferred it onto my mobile phone.<br />
+            <br />
+        </p>
+        <h2>Efficient Frontier Project</h2>
+
     </div>
 </body>
 <!--<body>
