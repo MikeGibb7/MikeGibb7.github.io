@@ -63,10 +63,13 @@
         }
 
             .sidebar ul li a {
-                color: darkgray;
+                color: rgb(169, 169, 169);
                 padding: 0 30px;
             }
-
+    .sideButton {
+        background-color:purple;
+        margin-left:18%;
+    }
     .content h1 {
         margin-top: 10px;
         margin-left: 23%;
@@ -120,6 +123,13 @@
     }
 </style>
 
+<script>
+    function scrollToProjects(){
+        const target = document.getElementById('project');
+        target.scrollIntoView({behavior: 'smooth'});
+    }
+</script>
+
 
 <head>
     <title>Sidebar </title>
@@ -136,9 +146,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://mikegibb7.github.io">
-                    <i class="fas fa-server"></i>
-                    <span>Projects</span>
+                <button class="sideButton" onclick="scrollToProjects()">Projects</button>
                 </a>
             </li>
         </ul>
@@ -238,7 +246,7 @@
             <br />
         </p>
     </div>
-        <h1 class="projects">Projects</h1>
+        <h1 class="projects" id="project">Projects</h1>
     <div class="content">
         
         <h2><br />Efficient Frontier Project - Python</h2>
