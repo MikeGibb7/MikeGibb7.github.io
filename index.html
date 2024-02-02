@@ -124,8 +124,8 @@
 </style>
 
 <script>
-    function scrollToProjects(){
-        const target = document.getElementById('project');
+    function scrollToProjects(id){
+        const target = document.getElementById(id);
         target.scrollIntoView({behavior: 'smooth'});
     }
 </script>
@@ -146,8 +146,10 @@
                 </a>
             </li>
             <li>
-                <button class="sideButton" onclick="scrollToProjects()">Projects</button>
-                </a>
+                <button class="sideButton" onclick="scrollToProjects('work')">Work Experience</button>
+            </li>
+            <li>
+                <button class="sideButton" onclick="scrollToProjects('project')">Projects</button>
             </li>
         </ul>
     </div>
@@ -211,7 +213,7 @@
     </div>
 
     <div class="content">
-        <h1>Work Experiences</h1>
+        <h1 id="work">Work Experiences</h1>
         <h2>Teaching Assistant</h2>
         <h3>University of Windsor - Jan 2024</h3>
         <p>
@@ -290,7 +292,8 @@
         <p>
             Developed Website using HTML and CSS to design sections and publish website,<br />
             used CSS to position images and use colors and titles. Used HTML to display<br />
-            the paragraphs and sections.<br />
+            the paragraphs and sections. Also used javaScript to implement side bar feature<br />
+            to scroll to destination.<br />
             <br />
         </p>
         <div class="picture">
