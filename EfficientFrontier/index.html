@@ -6,14 +6,14 @@
   <body>
     Pyodide test page <br>
     Open your browser console to see Pyodide output
-    <script type="text/javascript">
+    <script>
       async function main(){
         let pyodide = await loadPyodide();
         console.log(pyodide.runPython(`
             import sys
             sys.version
         `));
-        pyodide.runPython("print(1 + 2)");
+        pyodide.runPython('EfficientFrontier.py');
       }
       main();
     </script>
