@@ -13,6 +13,9 @@
             import sys
             sys.version
         `));
+        await pyodide.loadPackage("micropip");
+        const micropip = pyodide.pyimport("micropip");
+        await micropip.install('yfinance');
         const response = await fetch("EfficientFrontier.py");
         const pythonScript = await response.text();
         pyodide.runPython(pythonScript); 
