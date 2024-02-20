@@ -16,6 +16,7 @@
         await pyodide.loadPackage("micropip");
         const micropip = pyodide.pyimport("micropip");
         await micropip.install('yfinance');
+        await micropip.install('mplcursors');
         await pyodide.loadPackage("matplotlib")
         const response = await fetch("EfficientFrontier.py");
         const pythonScript = await response.text();
