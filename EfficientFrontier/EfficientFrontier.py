@@ -4,7 +4,7 @@ pip installs required:
 - numpy
 - mplcursors
 - scipy
-'''
+
 from stat import ST_DEV
 from statistics import correlation
 import yfinance as yahooFinance
@@ -13,7 +13,7 @@ import pandas as pd
 import matplotlib.pyplot as plt 
 import mplcursors
 import scipy.optimize as optimize
-
+'''
 
 '''
 Function Name: fetch_stock_data
