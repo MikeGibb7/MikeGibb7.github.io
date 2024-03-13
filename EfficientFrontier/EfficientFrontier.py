@@ -249,6 +249,7 @@ Desc: Main method, creates stock list, start and end dates, gets stock data, gen
 '''
 def main():
 
+    urlib3.disable_warnings()
     symbols = ["AAPL", "META", "MSFT", "GOOGL", "AMD", "KO", "J", "ALLY", "BMO"] # Add tickers you would like to be in the portfolios
     # Date range
     start = '2023-01-01'
