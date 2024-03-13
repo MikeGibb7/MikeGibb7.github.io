@@ -1,6 +1,8 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
   </head>
   <body>
@@ -13,12 +15,12 @@
             import sys
             sys.version
         `));
-        await pyodide.loadPackage("micropip");
-        const micropip = pyodide.pyimport("micropip");
-        await micropip.install('yfinance');
-        await micropip.install('mplcursors');
-        await pyodide.loadPackage("matplotlib");
-        await pyodide.loadPackage("scipy");
+        await pyodide.loadPackage("micropip")
+        const micropip = pyodide.pyimport("micropip")
+        const yahooFinance = await micropip.install('yfinance')
+        const mplcursors = await micropip.install('mplcursors')
+        const matplotlib = await pyodide.loadPackage("matplotlib")
+        const scipy = await pyodide.loadPackage("scipy")
         const response = await fetch("EfficientFrontier.py");
         const pythonScript = await response.text();
         pyodide.runPython(pythonScript); 
