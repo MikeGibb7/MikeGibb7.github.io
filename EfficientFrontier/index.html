@@ -15,7 +15,7 @@
         `));
         await pyodide.loadPackage("micropip");
         const micropip = pyodide.pyimport("micropip");
-        await micropip.install('yfinance');
+        await micropip.install('yfinance', {mode: 'no-cors'});
         await micropip.install('mplcursors');
         await pyodide.loadPackage('urllib3', {mode: 'no-cors'});
         await pyodide.loadPackage("matplotlib");
