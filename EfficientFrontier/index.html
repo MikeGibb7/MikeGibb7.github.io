@@ -17,7 +17,7 @@
         `));
         await pyodide.loadPackage("micropip")
         const micropip = pyodide.pyimport("micropip")
-        const yahooFinance = await micropip.install('yfinance')
+        const yFinance = await micropip.install('yfinance')
         const mplcursors = await micropip.install('mplcursors')
         const matplotlib = await pyodide.loadPackage("matplotlib")
         const scipy = await pyodide.loadPackage("scipy")
