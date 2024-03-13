@@ -16,8 +16,8 @@
         await pyodide.loadPackage("micropip");
         const micropip = pyodide.pyimport("micropip");
         await micropip.install('yfinance');
-        await micropip.install('mplcsursors', {mode: 'no-cors'});
-        await micropip.install('urllib3', {mode: 'no-cors'});
+        await micropip.install('mplcsursors');
+        await pyodide.loadPackage('urllib3');
         await pyodide.loadPackage("matplotlib");
         await pyodide.loadPackage("scipy");
         const response = await fetch("EfficientFrontier.py");
