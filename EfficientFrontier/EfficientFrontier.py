@@ -4,7 +4,7 @@ pip installs required:
 - numpy
 - mplcursors
 - scipy
-
+'''
 from stat import ST_DEV
 from statistics import correlation
 import yfinance as yahooFinance
@@ -13,7 +13,8 @@ import pandas as pd
 import matplotlib.pyplot as plt 
 import mplcursors
 import scipy.optimize as optimize
-'''
+import urllib3
+
 
 '''
 Function Name: fetch_stock_data
@@ -249,7 +250,7 @@ Desc: Main method, creates stock list, start and end dates, gets stock data, gen
 '''
 def main():
 
-    urlib3.disable_warnings()
+    urllib3.disable_warnings()
     symbols = ["AAPL", "META", "MSFT", "GOOGL", "AMD", "KO", "J", "ALLY", "BMO"] # Add tickers you would like to be in the portfolios
     # Date range
     start = '2023-01-01'
